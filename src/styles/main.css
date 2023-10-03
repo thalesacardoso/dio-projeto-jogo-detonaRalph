@@ -1,0 +1,21 @@
+/*
+DESENVOLVIDO POR: Thales Cardoso
+GITHUB: https://github.com/thalesacardoso
+DATA: 
+*/
+
+/* IMPORTA O RESET CSS */
+@import url('./reset.css');
+
+/* IMPORTA A FONTE DO GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+* {
+   font-size: 24px;
+   font-family: 'Open-sans', cursive;
+}
+
+body {
+   background-color: lightblue;
+}
