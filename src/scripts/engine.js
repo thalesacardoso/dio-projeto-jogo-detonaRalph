@@ -21,7 +21,8 @@ const states = {
       timerID: 0,
       score: 0,
       life: 3,
-      velocidade: 1000
+      speed: 500,
+      position: 0,
    },
    action: {}
 };
@@ -40,18 +41,36 @@ function randomEnemy() {
    // Pega o square aleatóriamente e adiciona a classe Enemy
    let enemy = states.view.square[x]
    enemy.classList.add('enemy')
+
+   // Armazena a posição que o inimigo aparece
+   states.values.position = enemy.id
 }
 
 function moveEnemy(){
-   states.values.timerID = setInterval(randomEnemy,states.values.velocidade)
+   states.values.timerID = setInterval(randomEnemy,states.values.speed)
 }
 
 function addListenerHitBox() {
+
+   states.view.square.forEach((square) => {
+      square.addEventListener('mousedown', () => {
+         // verifica se o id do click é igual a posição que o inimigo se encontra na tela
+         if (square.id == states.values.position){
+            // soma 1 ponto no total do score
+            states.values.score++
+            // altera o valor do html com o valor total do score
+            states.view.score.textContent = states.values.score
+            // reseta a posição do inimigo para que não tenha como ficar clicando e somando pontos no mesmo lugar
+            states.values.position = null;
+         }
+      })
+   })
 
 }
 
 function main() {
    moveEnemy()
+   addListenerHitBox()
 }
 
 main()
