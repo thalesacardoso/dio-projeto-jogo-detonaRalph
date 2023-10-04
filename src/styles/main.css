@@ -12,7 +12,7 @@ DATA:
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
 
 * {
-   font-size: 24px;
+   font-size: 16px;
    font-family: 'Press Start 2P';
 }
 
@@ -22,14 +22,20 @@ body {
 
 .container {
    height: 100vh;
+   background-image: url('../images/wall.png');
    display: flex;
    flex-direction: column;
 }
 
+
+/***************** MENU ***********************/
+
 .menu {
-   background-color: #000000;
    width: 100%;
-   height: 90px;
+   padding: 15px;
+   background-color: #000000;
+   border-bottom: 5px solid #ffd700;
+
    display: flex;
    justify-content: space-evenly;
    align-items: center;
@@ -38,5 +44,40 @@ body {
 
 .menu h2.titulo {
    color: #ff0000;
+   margin-bottom: 10px;
 }
 
+.menu-lives {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+
+
+/***************** PAINEL ***********************/
+
+.panel {
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.panel-row {
+   display: flex;
+}
+
+.square {
+   width: 150px;
+   height: 150px;
+   background-color: #add8e6;
+   border: 1px solid #000;
+}
+
+.enemy {
+   background-image: url('../images/ralph.png');
+   background-size: cover;
+}
