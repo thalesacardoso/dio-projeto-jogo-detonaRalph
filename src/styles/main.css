@@ -1,7 +1,8 @@
 /*
 DESENVOLVEDOR: Thales Cardoso
 GITHUB: https://github.com/thalesacardoso
-DATA: 
+LINKEDIN: https://www.linkedin.com/in/thalesacardoso/
+DATA: 05/10/2023
 */
 
 /* IMPORTA O RESET CSS */
@@ -14,6 +15,10 @@ DATA:
 * {
    font-size: 16px;
    font-family: 'Press Start 2P';
+}
+
+img {
+   max-width: 100%;
 }
 
 body {
@@ -97,3 +102,4 @@ body {
 .btn-continuar.ativo {
    display: block;
 }
+

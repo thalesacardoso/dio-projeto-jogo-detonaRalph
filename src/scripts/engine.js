@@ -1,6 +1,7 @@
 /*
-DESENVOLVIDO POR: Thales Cardoso
+DESENVOLVEDOR: Thales Cardoso
 GITHUB: https://github.com/thalesacardoso
+LINKEDIN: https://www.linkedin.com/in/thalesacardoso/
 DATA: 05/10/2023
 */
 
