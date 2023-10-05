@@ -131,6 +131,7 @@ function addListenerHitBox() {
 function main() {
    alert('ACERTE O ALVO PARA MARCAR PONTOS')
    addListenerHitBox()
+   mudarVida()
 }
 
 main()
